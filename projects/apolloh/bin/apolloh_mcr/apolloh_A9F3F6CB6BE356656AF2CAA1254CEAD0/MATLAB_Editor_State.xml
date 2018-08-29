@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Editor version="1.0">
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1278544229739" name="getCNStateFreqByGeneSubtypeK11ExprCor.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1279227430489" name="getCNStateFreqByGeneK11ExprCor.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1279227430540" name="cnaCallPerformance.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100233480" name="plotFrequency.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100233632" name="plotCNExprCorrelation.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100233820" name="plot2SubFigures.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100233930" name="getCNStateFreqByGeneSubtypeK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100234164" name="plotChiSquare.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100234322" name="plotChiSquareERstatus.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100234376" name="plotCopyNumberFromHmmOutputToFilesK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100234389" name="plotCopyNumberFromHmmOutputToFilesK11AsBars.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1280100234537" name="getConradFreqs.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1288131386626" name="plotCNFreqPerChMultipleK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1288132138109" name="plotCNFreqPerChrMultipleK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/code/scripts/matlab" lastWrittenTime="1288132138122" name="getCNStateFreqByGeneK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/script" lastWrittenTime="1304017456002" name="test.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/script" lastWrittenTime="1304017456857" name="snv_predict.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data7/jding/software/snv_prediction/script" lastWrittenTime="1304028090957" name="snv_predict.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/bin/lohhmm_mcr/share/data/gha/software/LOH-HMM_0.1.0/hmm" lastWrittenTime="1304196179090" name="appolloh_K10_params.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/parameters" lastWrittenTime="1304196196825" name="appolloh_K10_params.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/parameters" lastWrittenTime="1304196541181" name="apolloh_K10_params.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/script/backup" lastWrittenTime="1304631208753" name="snv_rf_predict.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data7/jding/software/snv_prediction/script/snv_classifier_independent" lastWrittenTime="1307121614297" name="snv_predict.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/roc" lastWrittenTime="1307121616670" name="roc.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/script/backup" lastWrittenTime="1307121617651" name="snv_rf_train_ind.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/software/snv_prediction/script/backup" lastWrittenTime="1307121618630" name="snv_rf_sel.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data7/jding/software/snv_prediction/script" lastWrittenTime="1307121619529" name="test.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data12/jding/classification/snv_predict/script" lastWrittenTime="1314044366982" name="feature_project.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/dlai/cnaseq" lastWrittenTime="1314302138371" name="cnaseq.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/rgiuliany/mutationSeq_v0/bin" lastWrittenTime="1319655658068" name="mutationseq_predict_single_rnaseq.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/bin" lastWrittenTime="1322709934236" name="lohhmmStromalRatioK20.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/plotting" lastWrittenTime="1322709934280" name="getLOHStateFreqByGeneK11.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/bin" lastWrittenTime="1330031697934" name="lohhmm.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/bin" lastWrittenTime="1332386606646" name="mutationseq_predict.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/demo/lobular" lastWrittenTime="1332386606731" name="demo_callmutation_from_bam.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/bin" lastWrittenTime="1332386606740" name="mutationseq_train.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/mutationSeq/demo/paper_demo" lastWrittenTime="1332386606749" name="seq_test.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/mutationSeq/demo/paper_demo" lastWrittenTime="1332386606757" name="demo_test.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/mutationSeq/demo/paper_demo" lastWrittenTime="1332386606765" name="seq_cv.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/jding/software/update/mutationSeq_v0/mutationSeq/demo/paper_demo" lastWrittenTime="1332386606773" name="demo_cv.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/release/APOLLOH_0.1.1/hmm" lastWrittenTime="1337025719818" name="binomHMMfwdBackViterbiCStromalRatio.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/hmm" lastWrittenTime="1337026229979" name="binomHMMfwdBackViterbiCStromalRatio.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/LOH-HMM_0.1.0/bin" lastWrittenTime="1337387753788" name="lohhmmStromalRatio.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/lustre/rgiuliany/mutationSeq_v0/demo/paper_demo" lastWrittenTime="1340589987761" name="rf_cv.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/APOLLOH_0.2.1/test" lastWrittenTime="1341033853081" name="SA073test.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/APOLLOH_0.2.1/hmm" lastWrittenTime="1341033853167" name="clonalBinoMM.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/APOLLOH_0.2.1/hmm" lastWrittenTime="1341349544948" name="BetaMM.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/share/data/gha/software/APOLLOH_0.2.1/hmm" lastWrittenTime="1341349545027" name="betapdf.m">
+      <CodeFolds version="1.0"/>
+   </File>
+</Editor>

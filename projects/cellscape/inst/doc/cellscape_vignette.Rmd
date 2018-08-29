@@ -1,0 +1,43 @@
+CellScape is a visualization tool for integrating single cell phylogeny with genomic content to clearly display evolutionary progression and tumour heterogeneity. 
+
+To run CellScape, type the following commands in R:
+
+```{r, eval=FALSE}
+install.packages("devtools") # if not already installed  
+library(devtools)  
+install_bitbucket("MO_BCCRC/cellscape")  
+library(cellscape)  
+example(cellscape) # to run examples
+```
+
+One of these, for example, is copy number data of a triple negative breast cancer patient published in Wang et al. (2014).
+```{r, echo=FALSE}
+library(devtools)  
+install_bitbucket("MO_BCCRC/cellscape")  
+library(cellscape) 
+# EXAMPLE 2 - COPY NUMBER DATA
+# single cell tree edges
+tree_edges <- read.csv(system.file("extdata", "cnv_tree_edges.csv", package = "cellscape"))
+# cnv segments data
+cnv_data <- read.csv(system.file("extdata", "cnv_data.csv", package = "cellscape"))
+# annotations
+sc_annot <- read.csv(system.file("extdata", "cnv_annots.tsv", package = "cellscape"), sep="\t")
+# custom clone colours
+clone_colours <- data.frame( clone_id = c("1","2","3"), colour = c("7fc97f", "beaed4", "fdc086"))
+# run cellscape
+cellscape(cnv_data=cnv_data, tree_edges=tree_edges, sc_annot=sc_annot, width=800, height=475, show_warnings=FALSE, clone_colours=clone_colours)
+```
+
+To view the documentation for CellScape, type the following command in R:
+
+```{r, eval=FALSE}
+?cellscape
+```
+
+CellScape was developed at the Shah Lab for Computational Cancer Biology at the BC Cancer Research Centre.
+
+References:  
+
+Eirew, Peter, et al. "Dynamics of genomic clones in breast cancer patient xenografts at single-cell resolution." Nature 518.7539 (2015): 422-426.
+
+Wang, Yong, et al. "Clonal evolution in breast cancer revealed by single nucleus genome sequencing." Nature 512.7513 (2014): 155-160.

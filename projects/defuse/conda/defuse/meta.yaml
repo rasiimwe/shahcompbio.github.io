@@ -1,0 +1,25 @@
+package:
+  name: defuse
+  version: '0.8.1'
+
+source:
+  git_url: https://dranew@bitbucket.org/dranew/defuse.git
+  git_rev: v0.8.1
+
+requirements:
+  build:
+    - boost_source ==1.60.0
+
+  run:
+    - r
+    - r-ada
+    - blat
+    - samtools
+    - ucsc-fatotwobit
+    - bowtie
+    - gmap
+
+about:
+  home: http://bitbucket.org/dranew/defuse
+  summary: 'Bioinformatics tool for gene fusion discovery using RNA-Seq data'
+

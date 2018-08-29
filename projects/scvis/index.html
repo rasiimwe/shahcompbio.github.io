@@ -1,0 +1,812 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>scvis | Shah Lab</title>
+    
+    <meta name="author" content="Sohrab P. Shah">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Shah Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Software</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">scvis</div>
+  
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content">
+      <p><a href="https://github.com/shahcompbio/scvis">Fork me on GitHub!</a></p>
+
+<p>scvis is a python package for dimension reduction of high-dimensional biological data, especially single-cell RNA-sequencing (scRNA-seq) data.</p>
+
+<h1 id="license">License</h1>
+
+<p>scvis is free for academic/non-profit use.</p>
+
+<h1 id="versions">Versions</h1>
+
+<h2 id="010">0.1.0</h2>
+
+<h1 id="installation">Installation</h1>
+
+<p>To install scvis, please make sure that you have the necessary libraries (below) installed.
+After that scvis can be installed from terminal:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># In terminal</span>
+python setup.py install
+</code></pre>
+</div>
+
+<p>Dependencies:</p>
+
+<ul>
+  <li>tensorflow &gt;= 1.1</li>
+  <li>PyYAML &gt;= 3.11</li>
+  <li>matplotlib &gt;= 1.5.1</li>
+  <li>numpy &gt;= 1.11.1</li>
+  <li>pandas &gt;= 0.19.1</li>
+</ul>
+
+<h1 id="how-to-use">How to use</h1>
+
+<p>After installing scvis, you can use the <code class="highlighter-rouge">scvis</code> command.</p>
+
+<h2 id="1-the-train-function">1, the <code class="highlighter-rouge">train</code> function</h2>
+
+<p>The <code class="highlighter-rouge">train</code> function can be used to learn a probabilistic parametric mapping (the exact directories of the input files should change based on their actual positions in the computer system):</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># In terminal</span>
+scvis train --data_matrix_file ./data/bipolar_pca100.tsv <span class="se">\</span>
+    --out_dir ./output/bipolar <span class="se">\</span>
+    --data_label_file ./data/bipolar_label.tsv <span class="se">\</span>
+    --verbose <span class="se">\</span>
+    --verbose_interval 50
+</code></pre>
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">--data_matrix_file</code>: a high-dimensional data matrix with the first row as the column names, in the tab delimited format. Each row represents a data point, e.g., the expression profile of a cell.</li>
+  <li><code class="highlighter-rouge">--out_dir</code> (optional): path for output files</li>
+  <li><code class="highlighter-rouge">--data_label_file</code> (optional): a one column file (with column header) provides the corresponding cluster information for each data point, just used for coloring scatter plots</li>
+  <li><code class="highlighter-rouge">--verbose</code> (optional): the program will print progress information to the screen if this flag is set</li>
+  <li><code class="highlighter-rouge">--verbose_interval</code> (optional): the mini-bach interval to show running information</li>
+</ul>
+
+<p>A trained model is saved in the folder <code class="highlighter-rouge">./output/bipolar/model/</code></p>
+
+<p>In addition to the model file, the low-dimensional embedding and the log-likelihoods are also written to two files in <code class="highlighter-rouge">./output/bipolar</code>,
+and are shown as two scatter plots colored by the given label information and the log-likelihoods (the log-likelihood files are names as <code class="highlighter-rouge">*_log_likelihood.tsv</code> and <code class="highlighter-rouge">*_log_likelihood.png</code>).</p>
+
+<p>The different components of the objective function are also saved to a file (<code class="highlighter-rouge">*_obj.tsv</code>) and shown in a graph (<code class="highlighter-rouge">*_obj.png</code>).
+If you want to plot intermediate embeddings during optimizations, you can set the flag: <code class="highlighter-rouge">--show_plot</code></p>
+
+<p>By default, the <code class="highlighter-rouge">data_matrix_file</code> is normalized by the maximum absolute value. If you want to provide a positive float number for normalization, you can set (<code class="highlighter-rouge">--normalize your_number</code>).</p>
+
+<p>Another important parameter is <code class="highlighter-rouge">--config_file</code>, which allows you to set various parameters. If you want to use your own config file, you can pass it as a parameter with flag: <code class="highlighter-rouge">--config_file</code>. The default config file is in <code class="highlighter-rouge">scvis/config/model_config.yaml</code>,  and you can use this file as a template to set parameters.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># In terminal</span>
+scvis train --data_matrix_file ./data/bipolar_pca100.tsv <span class="se">\</span>
+    --out_dir ./output/bipolar <span class="se">\</span>
+    --data_label_file ./data/bipolar_label.tsv <span class="se">\</span>
+    --verbose <span class="se">\</span>
+    --verbose_interval 50 <span class="se">\ </span>
+    --config_file model_config.yaml
+</code></pre>
+</div>
+
+<h2 id="2-the-map-function">2, the <code class="highlighter-rouge">map</code> function</h2>
+<p>After learning a probabilistic parametric mapping, the <code class="highlighter-rouge">map</code> function can be used to add new data to an existing embedding:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># In terminal</span>
+scvis map --data_matrix_file ./data/retina_pca100_bipolar.tsv <span class="se">\</span>
+    --out_dir ./output/retina <span class="se">\</span>
+    --pretrained_model_file ./output/bipolar/model/xxx.ckpt
+</code></pre>
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">--data_matrix_file</code>: a high-dimensional data matrix with the first row as the column names, in tab delimited format</li>
+  <li><code class="highlighter-rouge">--out_dir</code> (optional): path for output files</li>
+  <li><code class="highlighter-rouge">--pretrained_model_file</code>: a pre-trained scvis model by calling the <code class="highlighter-rouge">scvis train</code>, where <code class="highlighter-rouge">xxx</code> should be replaced by the checkpoint file prefix in the model folder.</li>
+</ul>
+
+<p>As for calling the <code class="highlighter-rouge">train</code> command, this command will also output the likelihood files and the low-dimensional embedding files, but without the model files and the objective function trace file and plots.</p>
+
+<p>The data matrix files for calling both <code class="highlighter-rouge">train</code> and <code class="highlighter-rouge">map</code> should be normalized similarly, i.e., the parameters used to normalize the training data should be used to normalize the test data. This is the default setting. You can also pass a positive float number to normalize your data: <code class="highlighter-rouge">--normalize your_number</code>.</p>
+
+<p>For <code class="highlighter-rouge">map</code>, you can also pass the config file as a parameter with flag: <code class="highlighter-rouge">--config_file</code>. Notice that the <code class="highlighter-rouge">config_file</code> for <code class="highlighter-rouge">train</code> and <code class="highlighter-rouge">map</code> should be the same.</p>
+
+
+    </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+
+    </ul>
+   -->  
+  
+    <hr>
+    
+  </div>
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <a href=http://molonc.bccrc.ca>
+          <img class="logo" alt="BCCA Molecular Oncology" src=/assets/images/bcca_logo.png>
+        </a>
+        <a href=http://www.ubc.ca/>
+          <img class="logo" alt="UBC" src=/assets/images/4_2016_UBCLogo_BlueRGB72.png>
+        </a>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='/join.html'>Join</a></li>
+          <li><a href='/contact.html'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-103919622-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

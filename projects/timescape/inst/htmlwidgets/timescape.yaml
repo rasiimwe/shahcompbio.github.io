@@ -1,0 +1,35 @@
+dependencies:
+ - name: d3
+   version: 3.5.6
+   src: "htmlwidgets/lib"
+   script: d3.min.js
+ - name: d3-tip
+   version: 0.6.3
+   src: "htmlwidgets/lib"
+   script: d3.tip.v0.6.3.js
+ - name: jquery
+   version: 2.1.4
+   src: "htmlwidgets/lib"
+   script: jquery-2.1.4.js
+ - name: colorbrewer
+   version: 0.0.1
+   src: "htmlwidgets/lib"
+   script: colorbrewer.js
+ - name: underscore
+   version: 1.8.3
+   src: "htmlwidgets/lib"
+   script: underscore.js
+ - name: dataTables
+   version: 1.10.11
+   src: "htmlwidgets/lib"
+   script: jquery.dataTables.min.js
+   stylesheet: jquery.dataTables.min.css
+ - name: run_timescape
+   version: 0.0.1
+   src: "htmlwidgets/lib"
+   script: run_timescape.js
+   stylesheet: timescape.css
+ - name: my_svg_crowbar
+   version: 0.0.0
+   src: "htmlwidgets/lib"
+   script: my_svg_crowbar.js

@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JointSNVMix | Shah Lab</title>
+    
+    <meta name="author" content="Sohrab P. Shah">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Shah Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Software</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">JointSNVMix</div>
+  
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content">
+      <p><a href="https://github.com/aroth85/JointSNVMix">Fork me on GitHub!</a></p>
+
+<p>JointSNVMix implements a probabilistic graphical model to analyse sequence data from tumour/normal pairs. 
+The model draws statistical strength by analysing both genome jointly to more accurately classify germline and somatic mutations.</p>
+
+<p>If you have questions see if they have been answered on the google group for JointSNVMix users at  http://groups.google.com/group/jointsnvmix-user-group. 
+If you can’t find an answer to your question, please post it on the google group.</p>
+
+<p>For information about other software from the Shah lab see http://compbio.bccrc.ca/.</p>
+
+<p>If you use JointSNVMix please cite :</p>
+
+<p><a href="http://bioinformatics.oxfordjournals.org/content/early/2012/01/27/bioinformatics.bts053.abstract">Andrew Roth et al., JointSNVMix : A Probabilistic Model For Accurate Detection Of Somatic Mutations In Normal/Tumour Paired Next Generation Sequencing Data</a></p>
+
+<h1 id="installing-jointsnvmix">Installing JointSNVMix</h1>
+
+<h2 id="download">Download</h2>
+
+<p>The source code implemented in Python is available under an open source license. 
+The last version is available in dist/ folder of the git repository.</p>
+
+<h2 id="dependencies">Dependencies</h2>
+<p>Though not explicitly required by the JointSNVMix software, <a href="http://www.htslib.org/">samtools</a> can be useful for creating bam, bam index and fasta index files that are required by JointSNVMix.</p>
+
+<p>Before installing the software the following libraries are required.</p>
+
+<ul>
+  <li><a href="http://www.python.org">Python</a> &gt;= 2.7</li>
+</ul>
+
+<h2 id="installing-jointsnvmix-1">Installing JointSNVMix</h2>
+<p>Once all dependencies have been installed JointSNVMix can be installed as follows.</p>
+
+<ul>
+  <li>tar -zxvf JointSNVMix-x.y.z.tar.gz</li>
+  <li>cd JointSNVMix-x.y.z</li>
+  <li>python setup.py install</li>
+</ul>
+
+<p>There is also config/ folder alongside the setup.py file. 
+This folder contains example priors, and parameters files for running the JointSNVMix software. 
+It may be useful to copy this somewhere easily accessible.</p>
+
+<h1 id="running-jointsnvmix">Running JointSNVMix</h1>
+
+<p>The JointSnvMix software package consists of a number of tools for calling somatic mutations in tumour/normal paired NGS data.
+After installation the <code class="highlighter-rouge">jsm.py</code> command should be available on your system.
+There are two subcommands <code class="highlighter-rouge">jsm.py classify</code> and <code class="highlighter-rouge">jsm.py train</code>. 
+If you type <code class="highlighter-rouge">jsm.py classify -h</code> or <code class="highlighter-rouge">jsm.py train -h</code> the list of options along with help will be presented.</p>
+
+<h2 id="models">Models</h2>
+<p>There are currently three models supported by both the <code class="highlighter-rouge">train</code> and <code class="highlighter-rouge">classify</code> commands. 
+All models use the JointSNVMix mixture model which jointly analyses the normal and tumour genomes.
+By default snvmix2 is used but other models can be specified using the <code class="highlighter-rouge">--model</code> flag.</p>
+
+<h2 id="description">Description</h2>
+<ul>
+  <li>binomial - Uses binomial densities in the mixture model this was previously referred to as the JointSnvMix1 mode.</li>
+  <li>snvmix2 - Uses snvmix2 densities in the mixture as described in the original SNVMix paper previously referred to as JointSnvMix2.</li>
+  <li>beta_binomial - Uses beta-binomial densities in the mixture model new in version 0.8. The beta-binomial is a robust (in the statistical sense) alternative to binomial model. It can be beneficial when dealing with over-dispersed data. This is useful in cancer genomes since allelic frequencies at somatic mutations sites may deviate significantly from those expected under diploid model.</li>
+</ul>
+
+    </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+
+    </ul>
+   -->  
+  
+    <hr>
+    
+  </div>
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <a href=http://molonc.bccrc.ca>
+          <img class="logo" alt="BCCA Molecular Oncology" src=/assets/images/bcca_logo.png>
+        </a>
+        <a href=http://www.ubc.ca/>
+          <img class="logo" alt="UBC" src=/assets/images/4_2016_UBCLogo_BlueRGB72.png>
+        </a>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='/join.html'>Join</a></li>
+          <li><a href='/contact.html'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-103919622-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

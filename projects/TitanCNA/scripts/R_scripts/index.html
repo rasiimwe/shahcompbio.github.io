@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>TitanCNA/scripts/R_scripts | Shah Lab</title>
+    
+    <meta name="author" content="Sohrab P. Shah">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Shah Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Software</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">TitanCNA/scripts/R_scripts</div>
+  
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content">
+      <p><a href="https://github.com/gavinha/TitanCNA">Fork me on GitHub!</a></p>
+
+<h1 id="r-scripts-for-titancna-analysis">R scripts for TitanCNA analysis</h1>
+
+<h2 id="1-standard-whole-genomeexome-sequencing-analysis">1. Standard Whole Genome/Exome Sequencing Analysis</h2>
+<p>R script (<code class="highlighter-rouge">titanCNA.R</code>) for running TitanCNA analysis on standard whole genome and exome sequencing data.</p>
+
+<p><strong>Input files</strong><br />
+  This script assumes that the necessary input files have been generated. These are generated by the KRONOS workflow.</p>
+<ol>
+  <li>GC-corrected, normalized read coverage using the HMMcopy suite<br />
+    * For exome analysis, please use the <code class="highlighter-rouge">targetedSequence</code> argument to specify the dataframe containing the exon baits input from a bed file.</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>exons &lt;- read.delim("exon_baits.bed", header = TRUE, as.is = TRUE)  
+correctReadDepth(tumWig, normWig, gcWig, mapWig, genomeStyle = "NCBI", targetedSequence = exons)  
+</code></pre>
+</div>
+
+<ol>
+  <li>Tumour allelic read counts at heterozygous SNPs (identifed from the normal sample).</li>
+</ol>
+
+<p><strong>Running the R script</strong></p>
+<ol>
+  <li>Look at the usage of the R script
+  ```
+  # from the command line
+    <blockquote>
+      <p>Rscript titanCNA.R –help
+  Usage: Rscript titanCNA.R [options]</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>Options:
+        –id=ID
+                Sample ID</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    --hetFile=HETFILE
+            File containing allelic read counts at HET sites. (Required)
+
+    --cnFile=CNFILE
+            File containing normalized coverage as log2 ratios. (Required)
+
+    --outDir=OUTDIR
+            Output directory to output the results. (Required)
+
+    --numClusters=NUMCLUSTERS
+            Number of clonal clusters. (Default: 1)
+
+    --numCores=NUMCORES
+            Number of cores to use. (Default: 1)
+
+    --ploidy_0=PLOIDY_0
+            Initial ploidy value; float (Default: 2)
+
+    --estimatePloidy=ESTIMATEPLOIDY
+            Estimate ploidy; TRUE or FALSE (Default: TRUE)
+
+    --normal_0=NORMAL_0
+            Initial normal contamination (1-purity); float (Default: 0.5)
+
+    --estimateNormal=ESTIMATENORMAL
+            Estimate normal contamination method; string {'map', 'fixed'} (Default: map)
+
+    --maxCN=MAXCN
+            Maximum number of copies to model; integer (Default: 8)
+    (... additional arguments)   ```
+</code></pre>
+</div>
+
+<p>Additional arguments to consider are the following:<br />
+  These arguments can be used to tune the model based on variance in the read coverage data and data-type (whole-exome sequencing or whole-genome sequencing).</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>  --alphaK=ALPHAK
+              Hyperparameter on Gaussian variance; for WES, use 2500; for WGS, use 10000; 
+              float (Default: 10000)
+
+  --alphaKHigh=ALPHAKHIGH
+              Hyperparameter on Gaussian variance for extreme copy number states; 
+              for WES, use 2500; for WGS, use 10000; float (Default: 10000)
+</code></pre>
+</div>
+<ol>
+  <li>Example usage of R script
+    <div class="highlighter-rouge"><pre class="highlight"><code>  # normalized coverage file: test.cn.txt
+  # allelic read count file: test.het.txt
+  Rscript titanCNA.R --id test --hetFile test.het.txt --cnFile test.cn.txt \
+ --numClusters 1 --numCores 1 --normal_0 0.5 --ploidy_0 2 \
+  --chrs "c(1:22, \"X\")" --estimatePloidy TRUE --outDir ./
+</code></pre>
+    </div>
+  </li>
+  <li>Running TitanCNA for multiple restarts and model selection
+  <code class="highlighter-rouge">titanCNA.R</code> should be run with multiple restarts for different values of (a) Ploidy (2,3,4) and (b) Number of clonal clusters. This will lead to multiple solutions. Each set of solutions for a given initialization of ploidy value will be saved to a directory (e.g. run_ploidy2, run_ploidy3, run_ploidy4).
+  The R script <code class="highlighter-rouge">selectSolution.R</code> will help select the optimal cluster from all these solutions.  The output is a tab-delimited file indicating the selected solution, along with parameters for that run.  It also includes the path to the results so users can collect the results.
+  ```
+  numClusters=3
+  numCores=4
+  ## run TITAN for each ploidy (2,3,4) and clusters (1 to numClusters)
+  echo “Maximum number of clusters: $numClusters”;
+  for ploidy in $(seq 2 4)
+ do
+   echo “Running TITAN for $i clusters.”;
+   outDir=run_ploidy$ploidy
+   mkdir $outDir
+   for numClust in $(seq 1 $numClusters)
+   do
+     echo “Running for ploidy=$ploidy”;
+     Rscript titanCNA_v1.10.1.R –id test –hetFile test.het.txt –cnFile test.cn.txt \
+     –numClusters $numClust –numCores $numCores –normal_0 0.5 –ploidy_0 $ploidy \
+     –chrs “c(1:22, "X")” –estimatePloidy TRUE –outDir $outDir
+   done
+   echo “Completed job for $numClust clusters.”
+ done</li>
+</ol>
+
+<p>## select optimal solution
+  Rscript selectSolution.R –ploidyRun2=run_ploidy2 –ploidyRun3=run_ploidy3 –ploidyRun4=run_ploidy4 –threshold=0.05 –outFile optimalClusters.txt
+  ```</p>
+
+
+    </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+
+    </ul>
+   -->  
+  
+    <hr>
+    
+  </div>
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <a href=http://molonc.bccrc.ca>
+          <img class="logo" alt="BCCA Molecular Oncology" src=/assets/images/bcca_logo.png>
+        </a>
+        <a href=http://www.ubc.ca/>
+          <img class="logo" alt="UBC" src=/assets/images/4_2016_UBCLogo_BlueRGB72.png>
+        </a>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='/join.html'>Join</a></li>
+          <li><a href='/contact.html'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-103919622-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>TitanCNA/scripts/TenX_scripts | Shah Lab</title>
+    
+    <meta name="author" content="Sohrab P. Shah">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Shah Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Software</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">TitanCNA/scripts/TenX_scripts</div>
+  
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content">
+      <p><a href="https://github.com/gavinha/TitanCNA">Fork me on GitHub!</a></p>
+
+<h2 id="1-snakemake-workflow-in-another-git-repo">1. Snakemake workflow in another Git repo:</h2>
+<p>https://github.com/gavinha/TitanCNA_10X_snakemake</p>
+
+<h2 id="2-10x-genomics-whole-genome-sequencing-analysis-deprecated">2. 10X Genomics Whole Genome Sequencing Analysis (deprecated)</h2>
+<p><em>The instructions in this section remains here for additional information of each analysis step. The full snakemake pipeline will contain all these steps, including additional post-processing steps.</em></p>
+
+<p>R script (<code class="highlighter-rouge">titanCNA_v1.15.0_TenX.R</code>) for running TitanCNA analysis on sequencing data with haplotype phasing such as 10X Genomics whole genome data</p>
+
+<p><strong>Input files</strong></p>
+<ol>
+  <li>GC-corrected, normalized read coverage using the HMMcopy suite<br />
+  a. Get molecule coverage by counting unique barcodes in non-overlapping bins.  To do this, you will need the following installed:
+    <ul>
+      <li><a href="https://github.com/walaj/bxtools#tile">bxtools</a></li>
+      <li>samtools
+ To extract the molecule coverage at 10kb bins across chromosome 1 for both tumour and normal samples:
+        <div class="highlighter-rouge"><pre class="highlight"><code> samtools view -h -F 0x4 -q 60 tumour.bam 1 | bxtools tile - -b chr1.10kb.bed &gt; tumour_bxTile/chr1.10kb.bxTile.bed  
+</code></pre>
+        </div>
+        <p>The chromosome bed files for 10kb bins is provided in <code class="highlighter-rouge">TenX_scripts/data/10kb.bed.tar.gz</code>. Just <code class="highlighter-rouge">tar xvzf 10kb.bed.tar.gz</code> to extract the files.</p>
+      </li>
+    </ul>
+
+    <p>b. Normalize the molecule coverage<br />
+ This analysis uses ichorCNA to correct molecular coverage by GC and mappability biases.<br />
+ See https://github.com/broadinstitute/ichorCNA/tree/master/scripts</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> # from the command line
+ &gt;Rscript TenX_scripts/getMoleculeCoverage.R --help
+ Usage: TenX_scripts/getMoleculeCoverage.R [options]
+
+
+ Options:
+         -t TUMORBXDIR, --tumorBXDir=TUMORBXDIR
+                 Path to directory containing tumor bed files for each chromosome containing BX tags.
+
+         -n NORMALBXDIR, --normalBXDir=NORMALBXDIR
+                 Path to directory containing normal bed files for each chromosome containing BX tags.
+
+         --minReadsPerBX=MINREADSPERBX
+                 Minimum number of reads per barcode.
+            
+         --gcWig=GCWIG
+                 Path to GC-content WIG file; Required
+                    
+         --libdir=LIBDIR
+                 Script library path to include new or modified source R files (optional). Default: [NULL]
+                
+         (... plus other options)  
+
+</code></pre>
+    </div>
+    <p>Here is an example</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  Rscript getMoleculeCoverage.R --id test  \
+     --tumorBXDir tumour_bxTile/ --normalBXDir normal_bxTile/ --minReadsPerBX 2 \
+     --chrs "c(1:22, \"X\")" --outDir ../ \
+     --centromere TenX_scripts/data/GRCh37.p13_centromere_UCSC-gapTable.txt \
+     --gcWig ichorCNA/inst/extdata/gc_hg38_1000kb.wig \
+     --libdir TitanCNA/R/
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Tumour sample allelic read counts at heterozygous SNPs (identifed from the matched normal sample).<br />
+  a. Identify the phased heterozygous SNPs (excluding indels) from the LongRanger 2.1 analysis on the matched normal sample.<br />
+ Use this R script from the command line to process the phased variant file (<code class="highlighter-rouge">*phased_variants.vcf.gz</code>) and extracts heterozygous sites after filtering.  The output VCF file suffix <code class="highlighter-rouge">*_phasedHets.vcf</code></p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> # from the command line
+ &gt; Rscript TenX_scripts/getPhasedHETSitesFromLLRVCF.R --help
+ Usage: Rscript getPhasedHETSitesFromLLRVCF.R [options]
+
+
+ Options:
+         -i INVCF, --inVCF=INVCF
+                 LongRanger 2.1 phased variant result VCF file; typically has filename suffix "*phased_variants.vcf.gz". [Required]
+
+         -q MINQUALITY, --minQuality=MINQUALITY
+                 Heterozygous variants with QUAL greater than or equal to this value are considered. [Default: 100]
+
+         -d MINDEPTH, --minDepth=MINDEPTH
+                 Heterozygous variants with read depth greater than or equal to this value are considered. [Default: 10]
+
+         -v MINVAF, --minVAF=MINVAF
+                 Heterozygous variants with variant allele fraction or reference allele fraction greater than this value are considered. [Default: 0.25]
+
+         -o OUTVCF, --outVCF=OUTVCF
+                 Output VCF file with suffix "_phasedHets.vcf" [Required]
+
+         -h, --help
+                 Show this help message and exit
+</code></pre>
+    </div>
+    <p>b. Extract allelic read counts from the tumour sample<br />
+   Using this python script, extract the allele read counts at the heterozygous SNP sites identified in the previous step.  This script is meant to be run per chromosome so that users can parallelize this step.  Users will need to combine the chromosome files into a single tab-delimited file for input into the R script.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> # from the command line
+ # run per chromosome
+ # The `pysam` library will need to be installed in python.
+
+ usage: python TenX_scripts/getTumourAlleleCountsAtHETSites.py $chr $phasedHetsVCF $bam $refFasta $baseQuality $mapQuality $vcfQuality &gt; $tumCountsFile
+
+ # $chr - Chromosome to analyze (e.g. 1)
+ # $phasedHetsVCF - Output VCF file from getPhasedHETSitesFromLLRVCF.R
+ # $bam - BAM file path of the tumour sample
+ # $refFasta - File path to the reference FASTA file
+ # $baseQuality - Minimum base quality to include in counts
+ # $mapuality - Minimum mapping quality of reads to include in counts
+ # $vcfQuality - Exclude HET sites with lower QUAL than this value
+ # $tumCountsFile - Output tab-delimited file 
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p><strong>Running the R script</strong></p>
+<ol>
+  <li>Look at the usage of the R script</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  # from the command line
+  &gt; Rscript titanCNA_v1.15.0_TenX.R --help
+  Usage: Rscript titanCNA_v1.15.0_TenX.R [options]
+
+
+  Options:
+        --id=ID
+                Sample ID
+
+        --hetFile=HETFILE
+                File containing allelic read counts at HET sites. (Required)
+        
+        (... other arguments similar to titanCNA.R)
+        
+        --alleleModel=ALLELEMODEL
+                Emission density to use for allelic input data (binomial or Gaussian). [Default: binomial]
+                
+        --alphaR=ALPHAR
+                Hyperparaemter on the Gaussian variance for allelic fraction data; used if --alleleModel="Gaussian". [Defaule: 5000]
+        
+        --haplotypeBinSize=HAPLOTYPEBINSIZE
+                Bin size for summarizing phased haplotypes. [Default: 100000]
+
+        --phaseSummarizeFun=PHASESUMMARIZEFUN
+                Strategy to summarize specified haplotype bins: mean, sum, SNP. [Default: sum]
+</code></pre>
+</div>
+<p>The specific arguments that are different compared to <code class="highlighter-rouge">titanCNA.R</code> are listed above.  <code class="highlighter-rouge">HETFILE</code> should be the output of <code class="highlighter-rouge">getTumourAlleleCountsAtHETSites.py</code>.</p>
+
+<ol>
+  <li>Example usage of R script</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  # normalized coverage file: test.cn.txt
+  # allelic read count file from getTumourAlleleCountsAtHETSites.py: test.het.txt
+  Rscript titanCNA.R --id test --hetFile test.het.txt --cnFile test.cn.txt \
+    --numClusters 1 --numCores 1 --normal_0 0.5 --ploidy_0 2 \
+    --chrs "c(1:22, \"X\")" --estimatePloidy TRUE --outDir ./ \
+    --haplotypeBinSize 1e5 --phaseSummarizeFun sum --alleleModel Gaussian --alphaR 5000
+</code></pre>
+</div>
+<ol>
+  <li>Running TitanCNA for multiple restarts and model selection<br />
+  Use the same approach as for Step 3 of <a href="#wgs">Standard Whole Genome/Exome Sequencing Analysis</a>.</li>
+</ol>
+
+    </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+
+    </ul>
+   -->  
+  
+    <hr>
+    
+  </div>
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <a href=http://molonc.bccrc.ca>
+          <img class="logo" alt="BCCA Molecular Oncology" src=/assets/images/bcca_logo.png>
+        </a>
+        <a href=http://www.ubc.ca/>
+          <img class="logo" alt="UBC" src=/assets/images/4_2016_UBCLogo_BlueRGB72.png>
+        </a>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='/join.html'>Join</a></li>
+          <li><a href='/contact.html'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-103919622-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

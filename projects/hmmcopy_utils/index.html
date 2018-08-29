@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>hmmcopy_utils | Shah Lab</title>
+    
+    <meta name="author" content="Sohrab P. Shah">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Shah Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Software</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">hmmcopy_utils</div>
+  
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content">
+      <p><a href="https://github.com/shahcompbio/hmmcopy_utils">Fork me on GitHub!</a></p>
+
+<h1 id="hmm-copy-utils">HMM Copy Utils</h1>
+
+<p>Author: Daniel Lai <a href="mailto:dalai@bccrc.ca">dalai@bccrc.ca</a> Department of Molecular Oncology, BC Cancer Research Agency
+Date:   August 02, 2011</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This repo provides tools for extracting read counts and gc and mappability statistics in preparation for running HMMCopy.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="using-cmake">Using CMake</h3>
+
+<p>Requires cmake installed and on PATH (http://www.cmake.org/).
+In the source directory, install as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cmake .
+make
+</code></pre>
+</div>
+
+<p>Should result in main binaries in /bin and useful binaries in /util</p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="mapcounter">mapCounter</h3>
+
+<p><em>fast</em> average mappability counter using BigWig files</p>
+
+<p>Overview:</p>
+
+<p>mapCounter is a small program for calculating average <a href="http://genome.ucsc.edu/cgi-bin/hgTrackUi?g=wgEncodeMapability">mappability</a> for non-overlapping
+windows of fixed width across all sequences (i.e. chromosomes) present in a <a href="http://genome.ucsc.edu/goldenPath/help/bigWig.html">BigWig file</a>.
+It is built mainly on top of an independent subset of files obtained from the
+<a href="http://genome.ucsc.edu/admin/git.html">UCSC Genome Browser source code</a> (i.e. kent library) made available by Jim Kent.
+Generating average mappability files in 1000 base windows (default) on hg18 took 160
+seconds on a 3.06 GHz Intel Core 2 Duo with 8GB RAM.</p>
+
+<p>Features:</p>
+
+<ul>
+  <li>Average mappability calculation for fixed non-overlapping windows</li>
+</ul>
+
+<p>CLI:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Usage: ./mapCounter [options] &lt;BigWig file&gt;
+
+Options:
+	-w, --window &lt;int&gt;       Specify the size of non-overlapping windows [1000]
+	-l, --list               List all chromosomes in BigWig file
+	-s, --sequence &lt;string&gt;  Specify the entries and order of sequences to analyze [ALL],
+							 the &lt;string&gt; should be a comma-delimited list (NO spaces)
+Example:
+	./mapCounter -w 100000 -s 1,3,5,X hg18.bw &gt; hg18.map.seg
+</code></pre>
+</div>
+
+<h3 id="gccounter">gcCounter</h3>
+
+<p>Overview:</p>
+
+<p>gcCounter is a small program for calculating GC content for non-overlapping
+windows of fixed width across all sequences (i.e. chromosomes) present in a FASTA
+reference file.  It is built mainly on top of the fastahack source code made
+available by Erik Garrison <a href="mailto:erik.garrison@bc.edu">erik.garrison@bc.edu</a> of the Marth Lab at Boson College
+at GitHub (https://github.com/ekg/fastahack).  Calculating the GC content in windows
+of 1000 on hg18 took 54 seconds on a 3.06 GHz Intel Core 2 Duo with 8GB RAM.</p>
+
+<p>Features:</p>
+
+<ul>
+  <li>FASTA index (.fai) generation for FASTA files (~30 seconds for hg18 on 3GHz Core 2 Duo)</li>
+  <li>GC content calculation for fixed non-overlapping windows</li>
+  <li>N content calculation (anything not ACGT) for fixed non-overlapping windows</li>
+</ul>
+
+<p>CLI:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Usage: ./gcCounter [options] &lt;FASTA reference&gt;
+
+Options:
+	-w, --window &lt;int&gt;       Specify the size of non-overlapping windows [1000]
+	-l, --list               List all chromosomes in FASTA reference file
+	-s, --sequence &lt;string&gt;  Specify the entries and order of sequences to analyze [ALL],
+							 the &lt;string&gt; should be a comma-delimited list (NO spaces)
+Example:
+	./gcCounter -w 100000 -s 1,3,5,X hg18.fasta &gt; hg18.gc.seg
+</code></pre>
+</div>
+
+<h3 id="readcounter">readCounter</h3>
+
+<p>Fast and memory efficient counting of reads in BAM files</p>
+
+<p>Overview:</p>
+
+<p>mapCounter is a small program for counting the number of reads in non-overlapping
+windows of fixed width directly from BAM files.  It is build on top of the <a href="http://bioinformatics.oxfordjournals.org/content/27/12/1691">BamTools API</a>
+made available by Derek Barnett on GitHub (https://github.com/pezmaster31/bamtools).</p>
+
+<p>Features:</p>
+
+<ul>
+  <li>Average mappability calculation for fixed non-overlapping windows</li>
+</ul>
+
+<p>CLI:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Usage: ./readCounter [options] &lt;BAM file&gt;
+
+Options:
+    -w, --window &lt;int&gt;       Specify the size of non-overlapping windows [1000]
+    -q, --quality &lt;int&gt;      Specify the mapping quality value below which reads are ignored
+
+    -l, --list               List all chromosomes in BAM reference file
+    -s, --sequence &lt;string&gt;  Specify the entries and order of sequences to analyze [ALL],
+                             the &lt;string&gt; should be a comma-delimited list (NO spaces)
+
+    -b, --build              Build BAM index for file (same index format as SAMtools)
+Example:
+    ./readCounter -w 100 -s 1,3,5,X aligned_reads.bam &gt; readcounts.seg
+</code></pre>
+</div>
+
+
+    </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      
+      
+
+
+  
+    
+  
+
+
+
+    </ul>
+   -->  
+  
+    <hr>
+    
+  </div>
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <a href=http://molonc.bccrc.ca>
+          <img class="logo" alt="BCCA Molecular Oncology" src=/assets/images/bcca_logo.png>
+        </a>
+        <a href=http://www.ubc.ca/>
+          <img class="logo" alt="UBC" src=/assets/images/4_2016_UBCLogo_BlueRGB72.png>
+        </a>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='/join.html'>Join</a></li>
+          <li><a href='/contact.html'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-103919622-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+
